@@ -1,2 +1,10 @@
 # ham-spam-text-predictor
  It is a Supervised machine learning FreeCodeCamp project with Python to predict if a sms is ham or spam. The project provide us with 2 datasets in .csv: one for training and the other for testing. After checking data, cleaning if needed, categorizing the variable, I have study the lenght text and the main words repeated in text to detect the main difference between ham or spam. Then, I have tokenized the message, and padded it. Later, I created the Dense model, with 4 layers, In the first network layer, the input is 5000 (dimension of word vocabulary) and output of 50. So on, until last layer with input of 256 and output 1. I compile and fit the model with "adam". Later, I iterated with 20 epochs getting in the last one a "lost" near 0,0012. I created a couple of plots to display loss and accuracy. And finally, I created a function to predict new introduced text.
+ 
+ 
+Note: You are currently reading this using Google Colaboratory which is a cloud-hosted version of Jupyter Notebook. This is a document containing both text cells for documentation and runnable code cells. If you are unfamiliar with Jupyter Notebook, watch this 3-minute introduction before starting this challenge: https://www.youtube.com/watch?v=inN8seMm7UI
+
+In this challenge, you need to create a machine learning model that will classify SMS messages as either "ham" or "spam". A "ham" message is a normal message sent by a friend. A "spam" message is an advertisement or a message sent by a company.
+You should create a function called predict_message that takes a message string as an argument and returns a list. The first element in the list should be a number between zero and one that indicates the likeliness of "ham" (0) or "spam" (1). The second element in the list should be the word "ham" or "spam", depending on which is most likely.
+For this challenge, you will use the SMS Spam Collection dataset. The dataset has already been grouped into train data and test data.
+The first two cells import the libraries and data. The final cell tests your model and function. Add your code in between these cells.
